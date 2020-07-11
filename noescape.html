@@ -27,6 +27,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    /*html {*/
+    /*  overflow-y: hidden;*/
+    /*}*/
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -42,9 +52,9 @@
           <div class="col-lg-8">
             <div style="padding: 4.25%"></div>
             <div class="owl-carousel portfolio-details-carousel">
-              <img src="assets/img/portfolio/noescapetwo.PNG" style="max-width: 86%; height: auto;  margin-left: auto; margin-right: auto" alt="">
-              <img src="assets/img/portfolio/noescapethree.PNG" style="max-width: 86%; height: auto;  margin-left: auto; margin-right: auto" alt="">
-              <img src="assets/img/portfolio/noescapefour.PNG" style="max-width: 86%; height: auto;  margin-left: auto; margin-right: auto" alt="">
+              <img src="assets/img/portfolio/noescapetwo.PNG" style="max-width: 79%; height: auto;  margin-left: auto; margin-right: auto" alt="">
+              <img src="assets/img/portfolio/noescapethree.PNG" style="max-width: 79%; height: auto;  margin-left: auto; margin-right: auto" alt="">
+              <img src="assets/img/portfolio/noescapefour.PNG" style="max-width: 79%; height: auto;  margin-left: auto; margin-right: auto" alt="">
             </div>
           </div>
 
@@ -56,7 +66,7 @@
             </ul>
 
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              No Escape is game that uses 3D mazes to simulate the point of view of a mouse inside a maze, made purely in Java. I created this project with the help of a junior during Code211, a one day hackathon for my school district, and won best project in the intermediate category. The maze data is stored through a two dimensional array that is later rendered during runtime. The goal is to navigate to the center where there is teleporter to bring you to the next level. The game was too hard to complete when testing it with students at the event so we also added a minimap to help. The minimap is an empty image created on compile time. The code iterates over the maze data and places black pixels, signifying walls, on the minimap in the coresponding locations. This makes it so the minimap works independently to what maze is given, opening the possibility to randomly generating mazes and an infinite amount of levels.
             </p>
           </div>
 

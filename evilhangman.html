@@ -27,6 +27,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    /*html {*/
+    /*  overflow-y: hidden;*/
+    /*}*/
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -56,7 +66,7 @@
             </ul>
 
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              Forget your preconceptions about Hangman. This may seem like a honest Hangman game but don't be fooled! It is programmed to do everything in it's power to make the player lose, hence the 'evil'. The program lies about picking a word but decides on a word length. Every time the user picks a letter, the code loops over a locally stored dictionary using JavaIO read and write operations to cross out any words that contained the guessed letters. When crossing out words with the letter chosen results in no words left in the dictionary that are the required length, a remaining word  with the correct length is randomly chosen as the answer and the user gets their letter correct. This technique maximizes the amount of possible wrong guesses a user can have.
             </p>
           </div>
 
